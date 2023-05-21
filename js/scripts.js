@@ -26,6 +26,7 @@ projects = [
 
 ]
 
+
 projects.map((project,index)=>{
 
     var cardContainer = document.createElement("div");
@@ -100,9 +101,30 @@ projects.map((project,index)=>{
     cardContainer.appendChild(cardBody);
     
     const card_list = document.getElementById("card-list");
+    if(card_list)
     card_list.appendChild(cardContainer);
     
 
 })
+
+console.log("test")
+// Scroll Animations
+const animatedElement = document.querySelector('.scroll-fade-in');
+
+    // Create a new Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+        console.log("test")
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        } else {
+          entry.target.classList.remove('active');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    // Start observing the element
+    observer.observe(animatedElement);
+ 
 
 
