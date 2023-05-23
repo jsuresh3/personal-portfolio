@@ -6,6 +6,7 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
+AOS.init();
 projects = [
     {
         title: "My Finance",
@@ -14,7 +15,14 @@ projects = [
         liveLink:"https://devjames-myfinance.netlify.app",
         githubLink: "https://github.com/James-Suresh/my-finance-frontend"
     },
-
+    {
+        title: "Real Estate app",
+        description: "Created a comprehensive real estate website from scratch, leveraging the power of Vue.js as the frontend framework. Implemented an advanced feature that enables users to browse property listings based on specific geographic areas. Achieved this functionality by integrating Google Geocoding API ",
+        image: "../assets/real-estate-img.jpg",
+        liveLink:"https://devjames-real-estate.netlify.app/",
+        githubLink: "https://github.com/James-Suresh/real-estate-frontend"
+        
+    },
     {
         title: "Chess app",
         description: "Chess app is hackathon project that utilizes lichess' api to recreate puzzles on site. The app also features OpenAI integrated jokes when selecting the play a friend option ",
@@ -85,7 +93,7 @@ projects.map((project,index)=>{
     
     // Create the image element
     var image = document.createElement("img");
-    image.className = "w-100 h-100 object-fit-cover";
+    image.className = "w-100 h-100";
     image.src = project.image;
     image.alt = "...";
     
@@ -109,22 +117,7 @@ projects.map((project,index)=>{
 
 console.log("test")
 // Scroll Animations
-const animatedElement = document.querySelector('.scroll-fade-in');
 
-    // Create a new Intersection Observer
-    const observer = new IntersectionObserver((entries) => {
-        console.log("test")
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-        } else {
-          entry.target.classList.remove('active');
-        }
-      });
-    }, { threshold: 0.2 });
-
-    // Start observing the element
-    observer.observe(animatedElement);
  
 
 

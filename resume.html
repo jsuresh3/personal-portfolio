@@ -20,7 +20,8 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+      
+    /><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="scss/magic.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100 bg-light">
@@ -50,7 +51,7 @@
                         <!-- Experience Section-->
                         <section>
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
+                                <h2 class="text-primary fw-bolder mb-0">Skills</h2>
                                 <!-- Download resume button-->
                                 <!-- Note: Set the link href target to a PDF file within your project-->
                                 <!-- <a class="btn btn-primary px-4 py-3" href="#!">
@@ -58,39 +59,101 @@
                                     Download Resume
                                 </a> -->
                             </div>
-                            <!-- Experience Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4 text-center">
-                                                <div class="text-primary fw-bolder mb-2">2022 - 2022</div>
-                                                <div class="small fw-bolder">Junior Software Developer (iOS) </div>
-                                                <div class="small text-muted">Revature</div>
-                                                <div class="small text-muted">Reston, VA </div>
-                                                <div class="small text-muted">(Remote)</div>
+
+                            <section>
+                                <!-- Skillset Card-->
+                                
+                                <div data-aos="flip-down" 
+                                data-aos-duration = "1000"
+                                data-aos-easing="ease-in"
+                                data-aos-delay="300"
+                                class="card shadow border-0 rounded-4 mb-5">
+                                    <div  class="card-body p-5">
+                                        <!-- Professional skills list-->
+                                        <div class="mb-0">
+                                            <div class="d-flex align-items-center mb-4">
+                                                <div class="feature bg-primary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
+                                                <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional Skills</span></h3>
+                                            </div>
+                                            <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center block rounded-4 p-3 h-100">Web Development</div></div>
+                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center block rounded-4 p-3 h-100">Project Management</div></div>
+                                                <div class="col"><div class="d-flex align-items-center block rounded-4 p-3 h-100"> Quality Assurance</div></div>
+                                            </div>
+                                            <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                                <div class="col mb-4 mb-md-0"><div class=" block d-flex align-items-center block rounded-4 p-3 h-100">Mobile App Development</div></div>
+                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center block rounded-4 p-3 h-100">Database Management</div></div>
+                                                <div class="col"><div class="d-flex align-items-center  rounded-4 block p-3 h-100">Problem Solving</div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8"><div>
-                                            <ul>
-                                                <li>Contributed to the development of TakeItEasy. An all in one iOS application that included seperate music,
-                                                    book, web search, notes and quiz pages using Swift</li>
-                                                    <li>
-                                                        Integrated RESTful APIs (such as the Deezer API) to allow for a real-time, wider selection of books and
-                                                        musics to download and stream from the Internet
-                                                    </li>
-                                                    <li>Designed and implemented custom animations for the iOS application with the UIAnimation library to enhance
-                                                        user experience.</li>
-                                                        <li>Completed intensive Swift and iOS training (including development of projects with frameworks such as Cocoa
-                                                            Pods and SwiftUI)</li>
+                                        
+                                        <!-- Languages list-->
+                                        <div class="mb-0">
+                                            <div class="d-flex align-items-center mb-4">
+                                                <div class="feature bg-primary  text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
+                                                <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
+                                            </div>
+                                            <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center block rounded-4 p-3 h-100">JavaScript</div></div>
+                                                
+                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center block rounded-4 p-3 h-100">Java</div></div>
+                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center block rounded-4 p-3 h-100">C#</div></div>
+                                            </div>
+                                            <div class="row row-cols-1 row-cols-md-3">
+                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center block rounded-4 p-3 h-100">Swift</div></div>
+                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center block rounded-4 p-3 h-100">SQL</div></div>
+                                                <div class="col"><div class="d-flex align-items-center block rounded-4 p-3 h-100">C++</div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
 
-                                            </ul>
-                                        </div></div>
+                            <h2 class="text-secondary fw-bolder mb-4">Experience</h2>
+                            <!-- Experience Card 1-->
+                            
+                            <div class="card-outer">
+                                <div data-aos="fade-right"
+                                data-aos-duration = "1000"
+                                data-aos-delay="250"
+                                class="card shadow border-0 rounded-4 mb-5 " >
+                                    <div class="card-body p-5">
+                                        <div class="row align-items-center gx-5">
+                                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                
+                                                <div class="bg-light p-4 rounded-4 text-center">
+                                                    <div class="text-primary fw-bolder mb-2">2022 - 2022</div>
+                                                    <div class="small fw-bolder">Junior Software Developer (iOS) </div>
+                                                    <div class="small text-muted">Revature</div>
+                                                    <div class="small text-muted">Reston, VA </div>
+                                                    <div class="small text-muted">(Remote)</div>
+                                                </div>
+                                            </div>
+                                
+                                            <div  class="col-lg-8"><div>
+                                                <ul>
+                                                    <li>Contributed to the development of TakeItEasy. An all in one iOS application that included seperate music,
+                                                        book, web search, notes and quiz pages using Swift</li>
+                                                        <li>
+                                                            Integrated RESTful APIs (such as the Deezer API) to allow for a real-time, wider selection of books and
+                                                            musics to download and stream from the Internet
+                                                        </li>
+                                                        <li>Designed and implemented custom animations for the iOS application with the UIAnimation library to enhance
+                                                            user experience.</li>
+                                                            <li>Completed intensive Swift and iOS training (including development of projects with frameworks such as Cocoa
+                                                                Pods and SwiftUI)</li>
+                                                </ul>
+                                            </div></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Experience Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class = "card-outer">
+                            <div data-aos="fade-left"
+                            data-aos-duration = "1000"
+                            data-aos-delay="250"
+                            class="card shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
@@ -117,12 +180,17 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         </section>
                         <!-- Education Section-->
                         <section>
                             <h2 class="text-secondary fw-bolder mb-4">Education</h2>
                             <!-- Education Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class = "card-outer">
+                            <div data-aos="fade-right"
+                            data-aos-duration = "1000"
+                            data-aos-delay="250"
+                            class="card  shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
@@ -142,82 +210,23 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
                             <!-- Education Card 2
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">2011 - 2015</div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder">ULA</div>
-                                                    <div class="small text-muted">Los Angeles, CA</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">Undergraduate</div>
-                                                    <div class="small text-muted">Computer Science</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
-                                    </div>
-                                </div>
-                            </div>
+                        
                         </section> -->
                         <!-- Divider-->
                         <div class="pb-5"></div>
                         <!-- Skills Section-->
-                        <section>
-                            <!-- Skillset Card-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <!-- Professional skills list-->
-                                    <div class="">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="feature bg-primary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional Skills</span></h3>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web Development</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Project Management</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"> Quality Assurance</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Mobile App Development</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Database Management</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Problem Solving</div>
-                                        </div>
-                                    </div>
-                                    <!-- Languages list-->
-                                    <div class="mb-0">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="feature bg-primary  text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div></div>
-                                            
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Java</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">C#</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Swift</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">React.js</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Node.js</div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+                      
                     </div>
                 </div>
             </div>
         </main>
         <!-- Footer-->
-        <!-- <footer class="bg-white py-4 mt-auto">
+        <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; James Suresh 2023</div></div>
                     <div class="col-auto">
                         <a class="small" href="#!">Privacy</a>
                         <span class="mx-1">&middot;</span>
@@ -227,9 +236,10 @@
                     </div>
                 </div>
             </div>
-        </footer> -->
+        </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
