@@ -11630,7 +11630,6 @@ html {
   left: 50%;
   transform: translateX(-50%);
   border-radius: 1rem;
-  margin-bottom: -1rem;
 }
 @media (min-width: 576px) {
   .profile {
