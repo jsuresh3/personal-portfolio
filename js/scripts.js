@@ -73,12 +73,14 @@ projects.map((project,index)=>{
     var liveLinkButton = document.createElement("a");
     liveLinkButton.className = "btn btn-primary me-2";
     liveLinkButton.href = project.liveLink;
+    liveLinkButton.target = "_blank";
     liveLinkButton.textContent = "Live Link";
     
     // Create the GitHub link button
       var githubLinkButton = document.createElement("a");
     githubLinkButton.className = "btn btn-outline-dark";
     githubLinkButton.href = project.githubLink;
+    githubLinkButton.target = "_blank";
     githubLinkButton.textContent = "GitHub";
     
     // Append the buttons to the button container
